@@ -8,7 +8,7 @@ const path = require('path');
 
 /* MERN STACK SCRIPTS */
 // Check if token and create req.user
-//app.use(require('./config/checkToken'));
+app.use(require('./config/checkToken'));
 
 // Put API routes here, before the "catch all" route
 // app.use('/api/users', require('./routes/api/users'));
