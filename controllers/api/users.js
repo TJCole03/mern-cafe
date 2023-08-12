@@ -29,6 +29,7 @@ const dataController = {
   },
   async login (req, res, next) {
     try {
+      console.log(req.body, 'hi')
       const user = await User.findOne({ email: req.body.email })
       if (!user) throw new Error()
       const match = await bcrypt.compare(req.body.password, user.password)
