@@ -5,29 +5,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; 
-    background-color: rgb(70, 121, 230);
+    color: rgb(0, 0, 0); 
+    font-family: Helvetica;
 }
 
-/*
-.form-container input email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3vmin;
+.form-container label {
+    margin: 10px;
+    background-color: rgb(85, 123, 204);
+    color: rgb(245, 239, 239); 
 }
 
-.form-container input password {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3vmin;
-}
+
+
+
 
 .form-container button {
     margin: 0;
-    background-color: aquamarine;
+    background-color: rgb(255, 242, 0);
+    position: relative;
+    margin-left: 10px; 
 }
-*/

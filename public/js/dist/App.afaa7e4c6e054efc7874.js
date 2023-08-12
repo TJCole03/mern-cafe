@@ -143,7 +143,9 @@ function LoginForm(_ref) {
   }, /*#__PURE__*/React.createElement("form", {
     autoComplete: "off",
     onSubmit: handleSubmit
-  }, /*#__PURE__*/React.createElement("label", null, "Email"), /*#__PURE__*/React.createElement("input", {
+  }, /*#__PURE__*/React.createElement("label", {
+    className: "email"
+  }, "Email"), /*#__PURE__*/React.createElement("input", {
     type: "text",
     name: "email",
     value: credentials.email,
@@ -1201,32 +1203,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.R7bwe71MX7h3F_WYpeAF {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: rgb(70, 121, 230);
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
 }
 
-/*
-.form-container input email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3vmin;
+.R7bwe71MX7h3F_WYpeAF label {
+  margin: 10px;
+  background-color: rgb(85, 123, 204);
+  color: rgb(245, 239, 239);
 }
 
-.form-container input password {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3vmin;
-}
-
-.form-container button {
-    margin: 0;
-    background-color: aquamarine;
-}
-*/`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;AACJ;;AAEA;;;;;;;;;;;;;;;;;;;;;CAAA","sourcesContent":[".form-container {\n    height: 100%; \n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 50%; \n    background-color: rgb(70, 121, 230);\n}\n\n/*\n.form-container input email {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n}\n\n.form-container input password {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n}\n\n.form-container button {\n    margin: 0;\n    background-color: aquamarine;\n}\n*/"],"sourceRoot":""}]);
+.R7bwe71MX7h3F_WYpeAF button {
+  margin: 0;
+  background-color: rgb(255, 242, 0);
+  position: relative;
+  margin-left: 10px;
+}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;AACJ;;AAEA;EACI,YAAA;EACA,mCAAA;EACA,yBAAA;AACJ;;AAMA;EACI,SAAA;EACA,kCAAA;EACA,kBAAA;EACA,iBAAA;AAHJ","sourcesContent":[".form-container {\n    height: 100%; \n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    color: rgb(0, 0, 0); \n    font-family: Helvetica;\n}\n\n.form-container label {\n    margin: 10px;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n}\n\n\n\n\n\n.form-container button {\n    margin: 0;\n    background-color: rgb(255, 242, 0);\n    position: relative;\n    margin-left: 10px; \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"form-container": `R7bwe71MX7h3F_WYpeAF`
@@ -1262,11 +1254,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   justify-content: center;
   align-items: center;
   border-radius: 25%;
-  background-color: rgb(92, 135, 171);
-  color: var(--tan-1);
+  background-color: rgb(85, 123, 204);
+  color: rgb(245, 239, 239);
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,mBAAA;EACA,kBAAA;EACA,kCAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(92, 135, 171);\n    color: var(--tan-1);\n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    }"],"sourceRoot":""}]);
+  font-family: Helvetica;
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`
@@ -2671,4 +2664,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.48a8192d1260d750bdadbb17c829aec9.js.map
+//# sourceMappingURL=App.36765423c2ecbe75e7ce7e99042f2a90.js.map
