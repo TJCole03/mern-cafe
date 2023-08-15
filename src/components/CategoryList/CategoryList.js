@@ -9,12 +9,15 @@ export default function CategoryList({ categories, activeCat, setActiveCat }) {
       // className={cat === activeCat && 'active'}
       onClick={() => setActiveCat(cat)}
     >
+      
       {cat}
     </li>
   );
+  console.log('clicked')
   return (
     <ul className={styles.CategoryList}>
       {cats}
-    </ul>
+      
+    </ul>  
   );
 }

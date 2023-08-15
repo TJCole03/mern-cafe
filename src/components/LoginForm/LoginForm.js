@@ -22,7 +22,6 @@ async function handleSubmit(evt) {
     // The promise returned by the signUp service method
     // will resolve to the user object included in the
     // payload of the JSON Web Token (JWT)
-    console.log('Teo')
     const user = await usersService.login(credentials);
     setUser(user);
   } catch {
@@ -41,6 +40,7 @@ return (
         <button type="submit">LOG IN</button>
       </form>
     </div>
+    
     <p className="error-message">&nbsp;{error}</p>
   </div>
 );

@@ -28,6 +28,7 @@ function CategoryList(_ref) {
     ,
     onClick: () => setActiveCat(cat)
   }, cat));
+  console.log('clicked');
   return /*#__PURE__*/React.createElement("ul", {
     className: _CategoryList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].CategoryList
   }, cats);
@@ -129,7 +130,6 @@ function LoginForm(_ref) {
         // The promise returned by the signUp service method
         // will resolve to the user object included in the
         // payload of the JSON Web Token (JWT)
-        console.log('Teo');
         const user = yield _utilities_users_service__WEBPACK_IMPORTED_MODULE_2__.login(credentials);
         setUser(user);
       } catch (_unused) {
@@ -179,9 +179,11 @@ function LoginForm(_ref) {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function Logo() {
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Logo
-  }, /*#__PURE__*/React.createElement("div", null, "Drums"), /*#__PURE__*/React.createElement("div", null, "  & "), /*#__PURE__*/React.createElement("div", null, "Hardware"));
+  }, /*#__PURE__*/React.createElement("div", null, "Drums"), /*#__PURE__*/React.createElement("div", null, "  & "), /*#__PURE__*/React.createElement("div", null, "Hardware")), /*#__PURE__*/React.createElement("div", {
+    className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].badum
+  }, "\"Ba dum. Tss!\""));
 }
 
 /***/ }),
@@ -210,9 +212,9 @@ function MenuList(_ref) {
     handleAddToOrder: handleAddToOrder,
     menuItem: item
   }));
-  return /*#__PURE__*/React.createElement("main", {
+  return /*#__PURE__*/React.createElement("div", {
     className: _MenuList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuList
-  }, items);
+  });
 }
 
 /***/ }),
@@ -966,7 +968,7 @@ function _sendRequest() {
         // Prefacing with 'Bearer' is recommended in the HTTP specification
         options.headers.Authorization = "Bearer ".concat(token);
       }
-      const res = yield fetch(url);
+      const res = yield fetch(url, options);
       // res.ok will be false if the status code set to 4xx in the controller action
       if (res.ok) return res.json();
       throw new Error('Bad Request');
@@ -1207,12 +1209,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.R7bwe71MX7h3F_WYpeAF {
   align-items: center;
   color: rgb(0, 0, 0);
   font-family: Helvetica;
+  position: relative;
+  align-self: center;
+  justify-self: center;
 }
 
 .R7bwe71MX7h3F_WYpeAF label {
   margin: 10px;
   background-color: rgb(85, 123, 204);
   color: rgb(245, 239, 239);
+  border: solid black 1px;
 }
 
 .R7bwe71MX7h3F_WYpeAF button {
@@ -1220,7 +1226,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.R7bwe71MX7h3F_WYpeAF {
   background-color: rgb(255, 242, 0);
   position: relative;
   margin-left: 10px;
-}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;AACJ;;AAGA;EACI,YAAA;EACA,mCAAA;EACA,yBAAA;AAAJ;;AAOA;EACI,SAAA;EACA,kCAAA;EACA,kBAAA;EACA,iBAAA;AAJJ","sourcesContent":[".form-container {\n    height: 100%; \n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    color: rgb(0, 0, 0); \n    font-family: Helvetica;\n    \n}\n\n.form-container label {\n    margin: 10px;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n}\n\n\n\n\n\n.form-container button {\n    margin: 0;\n    background-color: rgb(255, 242, 0);\n    position: relative;\n    margin-left: 10px; \n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,kBAAA;EACA,oBAAA;AACJ;;AAGA;EACI,YAAA;EACA,mCAAA;EACA,yBAAA;EACA,uBAAA;AAAJ;;AAIA;EACI,SAAA;EACA,kCAAA;EACA,kBAAA;EACA,iBAAA;AADJ","sourcesContent":[".form-container {\n    height: 100%; \n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    color: rgb(0, 0, 0); \n    font-family: Helvetica;\n    position: relative;\n    align-self: center;\n    justify-self: center;\n    \n}\n\n.form-container label {\n    margin: 10px;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    border: solid black 1px;\n}\n\n\n.form-container button {\n    margin: 0;\n    background-color: rgb(255, 242, 0);\n    position: relative;\n    margin-left: 10px; \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"form-container": `R7bwe71MX7h3F_WYpeAF`
@@ -1261,10 +1267,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
   font-family: Helvetica;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }"],"sourceRoot":""}]);
+}
+
+.j7bFV30NRir9YtLXQANB {
+  padding: 10px;
+  font-family: Helvetica;
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"Logo": `EDeinQzfS2N2rVW_Z1GP`
+	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
+	"badum": `j7bFV30NRir9YtLXQANB`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1576,21 +1588,29 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.KZB1FmPM2HSb6cQYM8ki {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   color: rgb(0, 0, 0);
   font-family: Helvetica;
+  justify-items: center;
 }
 
-.KZB1FmPM2HSb6cQYM8ki label {
+label {
   margin: 10px;
   background-color: rgb(85, 123, 204);
   color: rgb(245, 239, 239);
-}`, "",{"version":3,"sources":["webpack://./src/components/SignUpForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;AACJ;;AAGA;EACI,YAAA;EACA,mCAAA;EACA,yBAAA;AAAJ","sourcesContent":[".form-container {\n    height: 100%; \n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    color: rgb(0, 0, 0); \n    font-family: Helvetica;\n    \n}\n\n.form-container label {\n    margin: 10px;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n}"],"sourceRoot":""}]);
+  border: solid black 1px;
+}
+
+button {
+  margin: 0;
+  background-color: rgb(255, 242, 0);
+  position: relative;
+  margin-left: 10px;
+}`, "",{"version":3,"sources":["webpack://./src/components/SignUpForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;EACA,qBAAA;AACJ;;AAKC;EACG,YAAA;EACA,mCAAA;EACA,yBAAA;EACA,uBAAA;AAFJ;;AAMA;EACI,SAAA;EACA,kCAAA;EACA,kBAAA;EACA,iBAAA;AAHJ","sourcesContent":[".form-container {\n    height: 100vh; \n    width: 75vh;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    color: rgb(0, 0, 0); \n    font-family: Helvetica;   \n    justify-items: center;\n\n}\n\n\n\n label {\n    margin: 10px;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    border: solid black 1px;\n}\n\n\nbutton {\n    margin: 0;\n    background-color: rgb(255, 242, 0);\n    position: relative;\n    margin-left: 10px; \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"form-container": `KZB1FmPM2HSb6cQYM8ki`
@@ -2759,4 +2779,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.199f72d8f22751e566734a7dc3d8a85c.js.map
+//# sourceMappingURL=App.a08286450193f22bf409def71734b620.js.map

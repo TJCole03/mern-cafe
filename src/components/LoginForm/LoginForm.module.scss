@@ -7,6 +7,9 @@
     align-items: center;
     color: rgb(0, 0, 0); 
     font-family: Helvetica;
+    position: relative;
+    align-self: center;
+    justify-self: center;
     
 }
 
@@ -14,10 +17,8 @@
     margin: 10px;
     background-color: rgb(85, 123, 204);
     color: rgb(245, 239, 239); 
+    border: solid black 1px;
 }
-
-
-
 
 
 .form-container button {

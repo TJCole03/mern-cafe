@@ -5,33 +5,28 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const path = require('path');
 
-
-/* MERN STACK SCRIPTS */
-// Check if token and create req.user
-app.use(require('./config/checkToken'));
-
-// Put API routes here, before the "catch all" route
-// app.use('/api/users', require('./routes/api/users'));
-// // Protect the API routes below from anonymous users
-// const ensureLoggedIn = require('./config/ensureLoggedIn');
-// app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
-// app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
-
-
-
 /* Middleware */
 app.use(express.json());
 if (process.env.NODE_ENV !== 'development'){
   app.use(express.static('public'))
 }
 
-/* Controller Goes Here Remove the tes*/
-app.get('/test', (req, res)=>{
-	res.status(200).json({
-		website: 'My Website',
-		info: 'Not that much'
-	})
-})
+app.use((req, res, next) => {
+	res.locals.data = {};
+	next();
+});
+
+/* MERN STACK SCRIPTS */
+// Check if token and create req.user
+app.use(require('./config/checkToken'));
+
+// Put API routes here, before the "catch all" route
+app.use('/api/users', require('./routes/api/users'));
+// Protect the API routes below from anonymous users
+const ensureLoggedIn = require('./config/ensureLoggedIn');
+app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
+app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
+
 /* Controller Ends here */
 //LISTENER
 

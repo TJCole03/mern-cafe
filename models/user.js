@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const bcrypt = require('bcrypt')
 const Schema = mongoose.Schema
+const bcrypt = require('bcrypt')
 
 const SALT_ROUNDS = 6 //salt rounds are low in comparison to industry standard 10-12 rounds resulting in .1sec processing time
 
