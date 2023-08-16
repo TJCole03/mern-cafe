@@ -5,6 +5,11 @@
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--text-light);
+    font-family: helvetica;
+    background-image: url("https://scandinavianmuppetart.files.wordpress.com/2011/12/animal-scream-7001.jpg");
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   
   .OrderDetail .sectionHeading {
@@ -44,4 +49,6 @@
     position: absolute;
     top: 50vh;
     font-size: 2vmin;
+    position: relative;
+    top: 40px; 
   }
