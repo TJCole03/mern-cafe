@@ -12,7 +12,7 @@
     font-size: 4vmin;
   }
   
-  .MenuListItem .emoji {
+  .MenuListItem .imageURL {
     height: 8vw;
     width: 8vw;
     font-size: 4vw;
@@ -37,3 +37,18 @@
     text-align: center;
     color: var(--text-light);
   }
+
+  .MenuListItem .description button {
+    height: 2vh;
+    width: 2vh;
+    background-color: blue;
+    font-size: 1vw;
+    position: relative;
+    top: 30px;
+  }
+  .MenuListItem .btn-sm button {
+    height: 2vh;
+    width: 2vh;
+    background-color: yellow;
+  }
+

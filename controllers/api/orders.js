@@ -1,7 +1,7 @@
 const Order = require('../../models/order');
 
 module.exports = {
-  cart,
+  cart,  
   addToCart,
   setItemQtyInCart,
   checkout,

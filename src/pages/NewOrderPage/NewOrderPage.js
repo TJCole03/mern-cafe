@@ -21,6 +21,7 @@ export default function NewOrderPage({ user, setUser }) {
       const items = await itemsAPI.getAll();
       categoriesRef.current = items.reduce((cats, item) => {
         const cat = item.category.name;
+        console.log(cat)
         return cats.includes(cat) ? cats : [...cats, cat];
       }, []);
       setMenuItems(items);
