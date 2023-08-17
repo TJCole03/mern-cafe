@@ -243,8 +243,9 @@ function MenuListItem(_ref) {
   }, menuItem.imageURL), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
   }, menuItem.name), /*#__PURE__*/React.createElement("button", {
-    className: "description"
-  }, " CLICK FOR DESCRIPTION"), /*#__PURE__*/React.createElement("div", {
+    className: "description",
+    onClick: () => window.alert(menuItem.description)
+  }, "CLICK FOR DESCRIPTION"), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
   }, /*#__PURE__*/React.createElement("span", null, "$", menuItem.price.toFixed(2)), /*#__PURE__*/React.createElement("button", {
     className: "btn-sm",
@@ -1381,28 +1382,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   color: var(--text-light);
 }
 
+.X4tFBfG4MKknHvd01CKE .pJ3MTo6o133y1xTbjdEF button {
+  height: 1.5vh;
+  width: 1.5vh;
+  background-color: yellow;
+}
+
 .X4tFBfG4MKknHvd01CKE .pf735unx2yj8BJPmtTWz button {
-  height: 2vh;
-  width: 2vh;
+  height: 6vh;
+  width: 10vh;
   background-color: blue;
   font-size: 1vw;
   position: relative;
   top: 30px;
-}
-
-.X4tFBfG4MKknHvd01CKE .pJ3MTo6o133y1xTbjdEF button {
-  height: 2vh;
-  width: 2vh;
-  background-color: yellow;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,sBAAA;EACA,cAAA;EACA,kBAAA;EACA,SAAA;AACJ;;AACE;EACE,WAAA;EACA,UAAA;EACA,wBAAA;AAEJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .imageURL {\n    height: 8vw;\n    width: 8vw;\n    font-size: 4vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n\n  .MenuListItem .description button {\n    height: 2vh;\n    width: 2vh;\n    background-color: blue;\n    font-size: 1vw;\n    position: relative;\n    top: 30px;\n  }\n  .MenuListItem .btn-sm button {\n    height: 2vh;\n    width: 2vh;\n    background-color: yellow;\n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,YAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;EACA,WAAA;EACA,sBAAA;EACA,cAAA;EACA,kBAAA;EACA,SAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .imageURL {\n    height: 8vw;\n    width: 8vw;\n    font-size: 4vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n\n  .MenuListItem .btn-sm button {\n    height: 1.5vh;\n    width: 1.5vh;\n    background-color: yellow;\n  }\n\n  .MenuListItem .description button {\n    height: 6vh;\n    width: 10vh;\n    background-color: blue;\n    font-size: 1vw;\n    position: relative;\n    top: 30px;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
 	"imageURL": `JAyUrrfgBNB8mA0oaIZ5`,
 	"buy": `fO9kiPygtr0vmzsXoUxA`,
 	"name": `VR1OCl60qOXrRx1IzVEa`,
-	"description": `pf735unx2yj8BJPmtTWz`,
-	"btn-sm": `pJ3MTo6o133y1xTbjdEF`
+	"btn-sm": `pJ3MTo6o133y1xTbjdEF`,
+	"description": `pf735unx2yj8BJPmtTWz`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2812,4 +2813,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.3b47dcbb352a5559b85314ceb521c025.js.map
+//# sourceMappingURL=App.fe20018f337b3fbaebc4949e83d132bb.js.map

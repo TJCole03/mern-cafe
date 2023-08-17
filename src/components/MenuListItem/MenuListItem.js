@@ -6,8 +6,8 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
       <div className={styles.imageURL + ' ' + 'flex-ctr-ctr'}>{menuItem.imageURL}</div>
       <div className={styles.name}>{menuItem.name}</div>
 
-      <button className='description' > CLICK FOR DESCRIPTION 
-        
+      <button className='description' onClick={() => window.alert(menuItem.description)} >
+        CLICK FOR DESCRIPTION 
       </button>
 
       <div className={styles.buy}>

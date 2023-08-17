@@ -38,17 +38,18 @@
     color: var(--text-light);
   }
 
+  .MenuListItem .btn-sm button {
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: yellow;
+  }
+
   .MenuListItem .description button {
-    height: 2vh;
-    width: 2vh;
+    height: 6vh;
+    width: 10vh;
     background-color: blue;
     font-size: 1vw;
     position: relative;
     top: 30px;
-  }
-  .MenuListItem .btn-sm button {
-    height: 2vh;
-    width: 2vh;
-    background-color: yellow;
   }
 
