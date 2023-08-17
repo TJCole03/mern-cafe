@@ -6,10 +6,7 @@
     font-size: 2vmin;
     color: var(--text-light);
     font-family: helvetica;
-    background-image: url("https://scandinavianmuppetart.files.wordpress.com/2011/12/animal-scream-7001.jpg");
-    background-position: center; 
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: black;
   }
   
   .OrderDetail .sectionHeading {
@@ -21,6 +18,10 @@
     justify-content: flex-start;
     height: calc(100vh - 18vmin);
     width: 100%;
+    background-image: url("https://i.imgur.com/OJeajMx.jpg");
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   
   .OrderDetail .total {
