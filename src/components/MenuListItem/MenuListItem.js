@@ -3,8 +3,9 @@ import styles from './MenuListItem.module.scss';
 export default function MenuListItem({ menuItem, handleAddToOrder }) {
   return (
     <div className={styles.MenuListItem}>
-      <div className={styles.imageURL + ' ' + 'flex-ctr-ctr'}>{menuItem.imageURL}</div>
-      <div className={styles.name}>{menuItem.name}</div>
+      {/* <div className={styles.imageURL + ' ' + 'flex-ctr-ctr'}>{menuItem.imageURL}</div> */}
+      <img src={menuItem.imageURL} width="75" height="75" onClick={() => window.alert(<img src={menuItem.imageURL}/>)} />
+    <div className={styles.name}>{menuItem.name}</div> 
     <div className={styles.description}>
       <button className='description' onClick={() => window.alert(menuItem.description)} >
         CLICK FOR DESCRIPTION 

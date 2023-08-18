@@ -18,7 +18,7 @@ const Item = require('../models/item');
   const items = await Item.create([
     {name: '80s hair metal snare', imageURL: '/img/80s-snare.png', description: 'For when you turn 55 and join a Motley Crue tribute band', category: categories[0], price: 8000.00},
     {name: 'House kit from River City Blues in Harrisburg, PA', imageURL: '/img/punk-set.png', description: 'Sabian B8 series cymbals from 2000, Ludwig hardware from the 70s, brand new 2018 Evans hydraulic heads both top and bottom', category: categories[0], price: 200.00},
-    {name: 'The top screwy thing of a cymbal stand that always falls off', imageURL: '/img/cymbal-top.png', description: '"Where did the bloody thing go??? I just had it!!"', category: categories[1], price: 200.00},
+    {name: 'The top screwy thing of a cymbal stand that always falls off', imageURL: '/img/cymabl-top.png', description: '"Where did the bloody thing go??? I just had it!!"', category: categories[1], price: 200.00},
     {name: 'Trash can lid cymbal', imageURL: '/img/trash-can-lid.png', description: 'Goes with Lars Ulrichs snare drum in St. Anger', category: categories[2], price: 200.00},
     {name: 'Broken crash', imageURL: '/img/broken-crash.png', description: 'Doubles as a ninja star!', category: categories[2], price: 200.00},
     {name: 'The kick drum Keith Moon filled with cherry bombs', imageURL: '/img/moon-kit.png', description: 'Look it up. It really happened.', category: categories[3], price: 4000.00},
