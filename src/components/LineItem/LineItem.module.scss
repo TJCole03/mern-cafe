@@ -8,11 +8,19 @@
     border-top: .1vmin solid var(--tan-3);
     font-size: 1.5vw;
     }
-    
+
+    .LineItem .flex-ctr-ctr.flex-col span{
+        position: relative;
+        left: .5rem;
+        color: aquamarine;
+    }
+
+
     .LineItem:last-child {
     border-bottom: .1vmin solid var(--tan-3);
     }
     
+
     .LineItem .qty {
     display: flex;
     justify-content: space-between;

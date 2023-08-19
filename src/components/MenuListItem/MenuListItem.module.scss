@@ -31,16 +31,16 @@
   .MenuListItem .buy span {
     font-size: 1.7vw;
     text-align: center;
-    color: #fff;
+    color: #030303;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
         0 0 42px #0fa,
         0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 92px #0fa;
+        margin-bottom: 1rem;
+
   }
   
   .MenuListItem .name {
@@ -49,16 +49,16 @@
     color: var(--text-light);
     position: relative;
     left: 5rem;
-    color: #fff;
+    color: #030303;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
         0 0 42px #0fa,
         0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 92px #0fa;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
   }
 
   .MenuListItem .btn-sm button {
@@ -68,15 +68,16 @@
   }
 
   .MenuListItem .description button {
-    height: 5vh;
+    height: 4vh;
     width: 16vh;
     background-color: blue;
     font-size: 1vw;
     color: white;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
     position: relative;
     top: 3rem;
-    right: 8rem;
+    right: 7rem;
   }
 

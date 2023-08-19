@@ -1108,8 +1108,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l8hJyaPvo9smd6LiNqWK {
   text-align: center;
   border-radius: 0.5vmin;
   margin-bottom: 0.5vmin;
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
 }
 
 .l8hJyaPvo9smd6LiNqWK li:hover:not(._scckhAN2KPE1u73kR14) {
@@ -1122,7 +1122,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l8hJyaPvo9smd6LiNqWK {
   color: var(--text-dark);
   background-color: var(--tan-1);
   border: 0.1vmin solid var(--tan-3);
-}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,UAAA;EACA,gBAAA;EACA,uBAAA;EACA,kBAAA;AACJ;;AAEI;EACA,gBAAA;EACA,kBAAA;EACA,sBAAA;EACA,sBAAA;EACA,WAAA;EACA,oIACI;AAAR;;AAUI;EACA,eAAA;EACA,+BAAA;EACA,mBAAA;AAPJ;;AAUI;EACA,uBAAA;EACA,8BAAA;EACA,kCAAA;AAPJ","sourcesContent":[".CategoryList {\n    list-style: none;\n    padding: 0;\n    font-size: 1.7vw;\n    background-color: black;\n    border-radius: 15%;\n    }\n    \n    .CategoryList li {\n    padding: .6vmin;\n    text-align: center;\n    border-radius: .5vmin;\n    margin-bottom: .5vmin;\n    color: #fff;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n        0 0 102px #0fa,\n        0 0 151px #0fa;\n    }\n    \n    .CategoryList li:hover:not(.active) {\n    cursor: pointer;\n    background-color: var(--orange);\n    color: var(--white);\n    }\n    \n    .CategoryList li.active {\n    color: var(--text-dark);\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,UAAA;EACA,gBAAA;EACA,uBAAA;EACA,kBAAA;AACJ;;AAEI;EACA,gBAAA;EACA,kBAAA;EACA,sBAAA;EACA,sBAAA;EACA,cAAA;EACA,oGACI;AAAR;;AAQI;EACA,eAAA;EACA,+BAAA;EACA,mBAAA;AALJ;;AAQI;EACA,uBAAA;EACA,8BAAA;EACA,kCAAA;AALJ","sourcesContent":[".CategoryList {\n    list-style: none;\n    padding: 0;\n    font-size: 1.7vw;\n    background-color: black;\n    border-radius: 15%;\n    }\n    \n    .CategoryList li {\n    padding: .6vmin;\n    text-align: center;\n    border-radius: .5vmin;\n    margin-bottom: .5vmin;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n    }\n    \n    .CategoryList li:hover:not(.active) {\n    cursor: pointer;\n    background-color: var(--orange);\n    color: var(--white);\n    }\n    \n    .CategoryList li.active {\n    color: var(--text-dark);\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"CategoryList": `l8hJyaPvo9smd6LiNqWK`,
@@ -1162,6 +1162,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   font-size: 1.5vw;
 }
 
+.ZeRW57PNaWpYVsw6JlaC .XRZU9gxtesrxE34j8R9J.LvoVlQNlhWQlDfcGNN_P span {
+  position: relative;
+  left: 0.5rem;
+  color: aquamarine;
+}
+
 .ZeRW57PNaWpYVsw6JlaC:last-child {
   border-bottom: 0.1vmin solid var(--tan-3);
 }
@@ -1182,10 +1188,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
 
 .ZeRW57PNaWpYVsw6JlaC button {
   margin: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,wBAAA;EACA,uBAAA;EACA,sCAAA;EACA,gBAAA;AACJ;;AAEI;EACA,yCAAA;AACJ;;AAEI;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEI;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEI;EACA,SAAA;AACJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    background-color: black;\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    }\n    \n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    margin: 0;\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,wBAAA;EACA,uBAAA;EACA,sCAAA;EACA,gBAAA;AACJ;;AAEI;EACI,kBAAA;EACA,YAAA;EACA,iBAAA;AACR;;AAGI;EACA,yCAAA;AAAJ;;AAII;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,SAAA;AADJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    background-color: black;\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    }\n\n    .LineItem .flex-ctr-ctr.flex-col span{\n        position: relative;\n        left: .5rem;\n        color: aquamarine;\n    }\n\n\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n\n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    margin: 0;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
+	"flex-ctr-ctr": `XRZU9gxtesrxE34j8R9J`,
+	"flex-col": `LvoVlQNlhWQlDfcGNN_P`,
 	"qty": `Z_MQzAiRjTlxboCrh9om`,
 	"extPrice": `iZ6oJDRJlBAjRnxPhUy5`
 };
@@ -1274,7 +1282,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   justify-content: center;
   align-items: center;
   border-radius: 25%;
-  background-color: rgb(243, 77, 0);
+  background-color: rgb(223, 14, 14);
   color: rgb(245, 239, 239);
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
@@ -1284,7 +1292,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
 .j7bFV30NRir9YtLXQANB {
   padding: 10px;
   font-family: Helvetica;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,iCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(243, 77, 0);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,kCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(223, 14, 14);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
@@ -1391,8 +1399,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
 .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA span {
   font-size: 1.7vw;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
+  margin-bottom: 1rem;
 }
 
 .X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa {
@@ -1401,8 +1410,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   color: var(--text-light);
   position: relative;
   left: 5rem;
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
 }
 
 .X4tFBfG4MKknHvd01CKE .pJ3MTo6o133y1xTbjdEF button {
@@ -1412,17 +1423,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
 }
 
 .X4tFBfG4MKknHvd01CKE .pf735unx2yj8BJPmtTWz button {
-  height: 5vh;
+  height: 4vh;
   width: 16vh;
   background-color: blue;
   font-size: 1vw;
   color: white;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1rem;
   position: relative;
   top: 3rem;
-  right: 8rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;AACJ;;AAGE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AAAJ;;AAGE;EACE,aAAA;EACA,sBAAA;AAAJ;;AAGE;EACE,gBAAA;EACA,kBAAA;EACA,WAAA;EACA,oIACI;AADR;;AAWE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;EACA,oIACI;AATR;;AAmBE;EACE,aAAA;EACA,YAAA;EACA,wBAAA;AAhBJ;;AAmBE;EACE,WAAA;EACA,WAAA;EACA,sBAAA;EACA,cAAA;EACA,YAAA;EACA,aAAA;EACA,eAAA;EACA,kBAAA;EACA,SAAA;EACA,WAAA;AAhBJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    display: flex;\n    flex-direction: row;\n  }\n  \n  //want this on left\n  .MenuListItem .imageURL {\n    height: 2vw;\n    width: 2vw;\n    font-size: 1vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: #fff;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n        0 0 102px #0fa,\n        0 0 151px #0fa;\n  }\n  \n  .MenuListItem .name {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n    position: relative;\n    left: 5rem;\n    color: #fff;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n        0 0 102px #0fa,\n        0 0 151px #0fa;\n  }\n\n  .MenuListItem .btn-sm button {\n    height: 1.5vh;\n    width: 1.5vh;\n    background-color: yellow;\n  }\n\n  .MenuListItem .description button {\n    height: 5vh;\n    width: 16vh;\n    background-color: blue;\n    font-size: 1vw;\n    color: white;\n    display: flex;\n    flex-wrap: wrap;\n    position: relative;\n    top: 3rem;\n    right: 8rem;\n  }\n\n"],"sourceRoot":""}]);
+  right: 7rem;
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;AACJ;;AAGE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AAAJ;;AAGE;EACE,aAAA;EACA,sBAAA;AAAJ;;AAGE;EACE,gBAAA;EACA,kBAAA;EACA,cAAA;EACA,oGACI;EAMA,mBAAA;AANR;;AAUE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;EACA,kBAAA;EACA,UAAA;EACA,cAAA;EACA,oGACI;EAMJ,qBAAA;EACA,aAAA;AAbJ;;AAgBE;EACE,aAAA;EACA,YAAA;EACA,wBAAA;AAbJ;;AAgBE;EACE,WAAA;EACA,WAAA;EACA,sBAAA;EACA,cAAA;EACA,YAAA;EACA,aAAA;EACA,eAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;EACA,WAAA;AAbJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    display: flex;\n    flex-direction: row;\n  }\n  \n  //want this on left\n  .MenuListItem .imageURL {\n    height: 2vw;\n    width: 2vw;\n    font-size: 1vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n        margin-bottom: 1rem;\n\n  }\n  \n  .MenuListItem .name {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n    position: relative;\n    left: 5rem;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n    margin-bottom: 1.5rem;\n    padding: 1rem;\n  }\n\n  .MenuListItem .btn-sm button {\n    height: 1.5vh;\n    width: 1.5vh;\n    background-color: yellow;\n  }\n\n  .MenuListItem .description button {\n    height: 4vh;\n    width: 16vh;\n    background-color: blue;\n    font-size: 1vw;\n    color: white;\n    display: flex;\n    flex-wrap: wrap;\n    margin-top: 1rem;\n    position: relative;\n    top: 3rem;\n    right: 7rem;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1464,8 +1476,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   color: var(--text-light);
   font-family: helvetica;
   background-color: black;
-  color: #ec0d0d;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
 }
 
 .cPR75kdAXDGVxib0PszB .ap70fWT3eETsAtLlRQKl {
@@ -1482,8 +1494,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: black;
-  color: #ec0d0d;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
+}
+
+.cPR75kdAXDGVxib0PszB .DukscaUfz2NBy46zV7Im span {
+  position: relative;
+  left: 3rem;
 }
 
 .cPR75kdAXDGVxib0PszB .V5OAbv7QFHo6WglNx0m0 {
@@ -1514,12 +1531,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   font-size: 2vmin;
   position: relative;
   top: 40px;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,oIACI;AAAR;;AAUE;EACE,WAAA;AAPJ;;AAUE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;EACA,wDAAA;EACA,2BAAA;EACA,wBAAA;EACA,4BAAA;EACA,uBAAA;EACA,cAAA;EACA,uDACI;AARR;;AAaE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,sCAAA;AAVJ;;AAaE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AAVJ;;AAaE;EACE,aAAA;EACA,yBAAA;AAVJ;;AAaE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AAVJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n    font-family: helvetica;\n    background-color: black;\n    color: #ec0d0d;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n        0 0 102px #0fa,\n        0 0 151px #0fa;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n    background-image: url(\"https://i.imgur.com/OJeajMx.jpg\");\n    background-position: center; \n    background-size: contain;\n    background-repeat: no-repeat;\n    background-color: black;\n    color: #ec0d0d;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n    position: relative;\n    top: 40px; \n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AAAR;;AAQE;EACE,WAAA;AALJ;;AAQE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;EACA,wDAAA;EACA,2BAAA;EACA,wBAAA;EACA,4BAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AANR;;AAcE;EACE,kBAAA;EACA,UAAA;AAXJ;;AAcE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,sCAAA;AAXJ;;AAcE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AAXJ;;AAcE;EACE,aAAA;EACA,yBAAA;AAXJ;;AAcE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AAXJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n    font-family: helvetica;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n    background-image: url(\"https://i.imgur.com/OJeajMx.jpg\");\n    background-position: center; \n    background-size: contain;\n    background-repeat: no-repeat;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n\n  .OrderDetail .align-ctr span {\n    position: relative;\n    left: 3rem;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n    position: relative;\n    top: 40px; \n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
 	"sectionHeading": `ap70fWT3eETsAtLlRQKl`,
 	"lineItemContainer": `vVkqXbRqxMYDCnUttflb`,
+	"align-ctr": `DukscaUfz2NBy46zV7Im`,
 	"total": `V5OAbv7QFHo6WglNx0m0`,
 	"right": `GtULiQQdndLNSQN4Yc97`,
 	"hungry": `dyrUhYTujwEUiMzpjxWX`
@@ -1825,8 +1843,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
   grid-template-rows: 1fr;
   border-radius: 2vmin;
   background-color: black;
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
 }
 
 .RZqTJBeYN7RXwcHgPFys aside {
@@ -1835,7 +1853,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
   justify-content: space-between;
   align-items: center;
   margin: 3vmin 2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,oBAAA;EACA,uBAAA;EACA,WAAA;EACA,oIACI;AAAR;;AAUE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;AAPJ","sourcesContent":[".NewOrderPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    border-radius: 2vmin;\n    background-color: black;\n    color: #fff;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n        0 0 102px #0fa,\n        0 0 151px #0fa;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: center;\n    margin: 3vmin 2vmin;\n  }\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,oBAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AAAR;;AAQE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;AALJ","sourcesContent":[".NewOrderPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    border-radius: 2vmin;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa,\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: center;\n    margin: 3vmin 2vmin;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NewOrderPage": `RZqTJBeYN7RXwcHgPFys`
@@ -1881,7 +1899,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   margin: 3vmin 2vmin;
   color: antiquewhite;
   background-color: black;
-}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACE,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;AAAF","sourcesContent":["// ```css\n.OrderHistoryPage {\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1.6fr 3.5fr 3fr;\n  grid-template-rows: 1fr;\n  background-color: var(--white);\n  border-radius: 2vmin;\n  background-color: black;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  margin: 3vmin 2vmin;\n  color: antiquewhite;\n  background-color: black;\n\n}"],"sourceRoot":""}]);
+  color: #030303;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
+}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACE,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AADN","sourcesContent":["// ```css\n.OrderHistoryPage {\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1.6fr 3.5fr 3fr;\n  grid-template-rows: 1fr;\n  background-color: var(--white);\n  border-radius: 2vmin;\n  background-color: black;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  margin: 3vmin 2vmin;\n  color: antiquewhite;\n  background-color: black;\n  color: #030303;\n  text-shadow:\n      0 0 7px #fff,\n      0 0 10px #fff,\n      0 0 21px #fff,\n      0 0 42px #0fa,\n      0 0 82px #0fa,\n      0 0 92px #0fa;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderHistoryPage": `U7F51i6q23MB43wS4GeC`,
@@ -2855,4 +2875,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8a981fb0710ac2c4bf145cdca1380ce3.js.map
+//# sourceMappingURL=App.a5a116ec4a51d8e3ebfcf1d40d79f45e.js.map
