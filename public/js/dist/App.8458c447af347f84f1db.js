@@ -1274,7 +1274,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   justify-content: center;
   align-items: center;
   border-radius: 25%;
-  background-color: rgb(85, 123, 204);
+  background-color: rgb(243, 77, 0);
   color: rgb(245, 239, 239);
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
@@ -1284,7 +1284,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
 .j7bFV30NRir9YtLXQANB {
   padding: 10px;
   font-family: Helvetica;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(85, 123, 204);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,iCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(243, 77, 0);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
@@ -2855,4 +2855,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.4fddb9b98c291d8ac6739eed668fd025.js.map
+//# sourceMappingURL=App.8a981fb0710ac2c4bf145cdca1380ce3.js.map
