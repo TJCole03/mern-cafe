@@ -242,8 +242,8 @@ function MenuListItem(_ref) {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuListItem
   }, /*#__PURE__*/React.createElement("img", {
     src: menuItem.imageURL,
-    width: "75",
-    height: "75",
+    width: "125",
+    height: "125",
     onClick: () => menuItem.style.transform = scale(4)
   }), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
@@ -1162,10 +1162,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   font-size: 1.5vw;
 }
 
-.ZeRW57PNaWpYVsw6JlaC .XRZU9gxtesrxE34j8R9J.LvoVlQNlhWQlDfcGNN_P span {
-  position: relative;
-  left: 0.5rem;
-  color: aquamarine;
+.ZeRW57PNaWpYVsw6JlaC .XRZU9gxtesrxE34j8R9J div {
+  align-content: center;
+  align-items: center;
+  color: aqua;
 }
 
 .ZeRW57PNaWpYVsw6JlaC:last-child {
@@ -1188,12 +1188,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
 
 .ZeRW57PNaWpYVsw6JlaC button {
   margin: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,wBAAA;EACA,uBAAA;EACA,sCAAA;EACA,gBAAA;AACJ;;AAEI;EACI,kBAAA;EACA,YAAA;EACA,iBAAA;AACR;;AAGI;EACA,yCAAA;AAAJ;;AAII;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,SAAA;AADJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    background-color: black;\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    }\n\n    .LineItem .flex-ctr-ctr.flex-col span{\n        position: relative;\n        left: .5rem;\n        color: aquamarine;\n    }\n\n\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n\n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    margin: 0;\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,wBAAA;EACA,uBAAA;EACA,sCAAA;EACA,gBAAA;AACJ;;AAEI;EACI,qBAAA;EACA,mBAAA;EACA,WAAA;AACR;;AAGI;EACA,yCAAA;AAAJ;;AAII;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AADJ;;AAII;EACA,SAAA;AADJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    background-color: black;\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    }\n\n    .LineItem .flex-ctr-ctr div {\n        align-content: center;\n        align-items: center;\n        color:aqua;\n      }\n\n\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n\n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    margin: 0;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
 	"flex-ctr-ctr": `XRZU9gxtesrxE34j8R9J`,
-	"flex-col": `LvoVlQNlhWQlDfcGNN_P`,
 	"qty": `Z_MQzAiRjTlxboCrh9om`,
 	"extPrice": `iZ6oJDRJlBAjRnxPhUy5`
 };
@@ -1334,12 +1333,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.eBz5FvD9TgyIgfFi1MdG {
   background-size: contain;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 350px) {
   .eBz5FvD9TgyIgfFi1MdG {
     margin-left: auto;
     margin-right: auto;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,4FAAA;EACA,2BAAA;EACA,4BAAA;EACA,wBAAA;AACJ;;AAGA;EACI;IACE,iBAAA;IACA,kBAAA;EAAJ;AACF","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    background-image: url(\"https://wallpapers.com/images/hd/animal-muppet-ku884kxeoz732dcf.jpg\");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: contain; \n    //opacity: 35%;\n}\n\n@media (min-width: 750px) {\n    .MenuList {\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,4FAAA;EACA,2BAAA;EACA,4BAAA;EACA,wBAAA;AACJ;;AAGA;EACI;IACE,iBAAA;IACA,kBAAA;EAAJ;AACF","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    background-image: url(\"https://wallpapers.com/images/hd/animal-muppet-ku884kxeoz732dcf.jpg\");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: contain; \n    //opacity: 35%;\n}\n\n@media (min-width: 350px) {\n    .MenuList {\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuList": `eBz5FvD9TgyIgfFi1MdG`
@@ -1498,11 +1497,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
 }
 
-.cPR75kdAXDGVxib0PszB .DukscaUfz2NBy46zV7Im span {
-  position: relative;
-  left: 3rem;
-}
-
 .cPR75kdAXDGVxib0PszB .V5OAbv7QFHo6WglNx0m0 {
   width: 100%;
   display: grid;
@@ -1531,13 +1525,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   font-size: 2vmin;
   position: relative;
   top: 40px;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AAAR;;AAQE;EACE,WAAA;AALJ;;AAQE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;EACA,wDAAA;EACA,2BAAA;EACA,wBAAA;EACA,4BAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AANR;;AAcE;EACE,kBAAA;EACA,UAAA;AAXJ;;AAcE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,sCAAA;AAXJ;;AAcE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AAXJ;;AAcE;EACE,aAAA;EACA,yBAAA;AAXJ;;AAcE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AAXJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n    font-family: helvetica;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n    background-image: url(\"https://i.imgur.com/OJeajMx.jpg\");\n    background-position: center; \n    background-size: contain;\n    background-repeat: no-repeat;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n\n  .OrderDetail .align-ctr span {\n    position: relative;\n    left: 3rem;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n    position: relative;\n    top: 40px; \n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AAAR;;AAQE;EACE,WAAA;AALJ;;AAQE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;EACA,wDAAA;EACA,2BAAA;EACA,wBAAA;EACA,4BAAA;EACA,uBAAA;EACA,cAAA;EACA,oGACI;AANR;;AAeE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,sCAAA;AAZJ;;AAeE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AAZJ;;AAeE;EACE,aAAA;EACA,yBAAA;AAZJ;;AAeE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AAZJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n    font-family: helvetica;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n    background-image: url(\"https://i.imgur.com/OJeajMx.jpg\");\n    background-position: center; \n    background-size: contain;\n    background-repeat: no-repeat;\n    background-color: black;\n    color: #030303;\n    text-shadow:\n        0 0 7px #fff,\n        0 0 10px #fff,\n        0 0 21px #fff,\n        0 0 42px #0fa,\n        0 0 82px #0fa,\n        0 0 92px #0fa;\n  }\n\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n    position: relative;\n    top: 40px; \n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
 	"sectionHeading": `ap70fWT3eETsAtLlRQKl`,
 	"lineItemContainer": `vVkqXbRqxMYDCnUttflb`,
-	"align-ctr": `DukscaUfz2NBy46zV7Im`,
 	"total": `V5OAbv7QFHo6WglNx0m0`,
 	"right": `GtULiQQdndLNSQN4Yc97`,
 	"hungry": `dyrUhYTujwEUiMzpjxWX`
@@ -1631,6 +1624,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   background-color: rgba(0, 0, 0, 0.669);
   position: relative;
   top: 3rem;
+  opacity: 25;
 }
 
 .SbDKL2bctOyC5ZgA0KfW > div > div:first-child {
@@ -1646,8 +1640,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
 .SbDKL2bctOyC5ZgA0KfW:not(.mOA_Z5p05rn7VW_2oU68):hover {
   border-color: var(--orange);
   border-width: 0.2vmin;
-  opacity: 50%;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,sCAAA;EACA,kBAAA;EACA,SAAA;AACJ;;AAEI;EACA,sBAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,eAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,YAAA;AACJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    background-color: rgba(0, 0, 0, 0.669);\n    position: relative;\n    top: 3rem; \n    }\n    \n    .OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n    }\n    \n    .OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    cursor: default;\n    }\n    \n    .OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    opacity: 50%;\n    }"],"sourceRoot":""}]);
+  opacity: 65%;
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,sCAAA;EACA,kBAAA;EACA,SAAA;EACA,WAAA;AACJ;;AAEI;EACA,sBAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,eAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,YAAA;AACJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    background-color: rgba(0, 0, 0, 0.669);\n    position: relative;\n    top: 3rem; \n    opacity: 25;\n    }\n    \n    .OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n    }\n    \n    .OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    cursor: default;\n    }\n    \n    .OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    opacity: 65%;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderListItem": `SbDKL2bctOyC5ZgA0KfW`,
@@ -2875,4 +2869,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a5a116ec4a51d8e3ebfcf1d40d79f45e.js.map
+//# sourceMappingURL=App.9e66e3ba75884c4b2cc95229b81fcd78.js.map

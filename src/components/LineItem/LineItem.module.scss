@@ -9,11 +9,11 @@
     font-size: 1.5vw;
     }
 
-    .LineItem .flex-ctr-ctr.flex-col span{
-        position: relative;
-        left: .5rem;
-        color: aquamarine;
-    }
+    .LineItem .flex-ctr-ctr div {
+        align-content: center;
+        align-items: center;
+        color:aqua;
+      }
 
 
     .LineItem:last-child {

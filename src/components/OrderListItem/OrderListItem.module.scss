@@ -13,6 +13,7 @@
     background-color: rgba(0, 0, 0, 0.669);
     position: relative;
     top: 3rem; 
+    opacity: 25;
     }
     
     .OrderListItem > div> div:first-child {
@@ -28,5 +29,5 @@
     .OrderListItem:not(.selected):hover {
     border-color: var(--orange);
     border-width: .2vmin;
-    opacity: 50%;
+    opacity: 65%;
     }
