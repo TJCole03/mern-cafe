@@ -183,7 +183,11 @@ function LoginForm(_ref) {
 function Logo() {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Logo
-  }, /*#__PURE__*/React.createElement("div", null, "Drums"), /*#__PURE__*/React.createElement("div", null, "  & "), /*#__PURE__*/React.createElement("div", null, "Hardware")), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "/img/z-k.png",
+    width: "100",
+    height: "100"
+  })), /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].badum
   }, "\"Ba dum. Tss!\""));
 }
@@ -1274,14 +1278,11 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
-  height: 14vmin;
-  width: 14vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25%;
-  background-color: rgb(223, 14, 14);
   color: rgb(245, 239, 239);
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
@@ -1291,7 +1292,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
 .j7bFV30NRir9YtLXQANB {
   padding: 10px;
   font-family: Helvetica;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,kCAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    height: 14vmin;\n    width: 14vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    background-color: rgb(223, 14, 14);\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,kBAAA;EACA,kCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;AACJ","sourcesContent":[".Logo {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 25%;\n    color: rgb(245, 239, 239); \n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n    font-family: Helvetica;\n    }\n\n.badum {\n    padding: 10px; \n    font-family: Helvetica;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
@@ -2869,4 +2870,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.9e66e3ba75884c4b2cc95229b81fcd78.js.map
+//# sourceMappingURL=App.a392762d92b69d8f67e333daded333c0.js.map
