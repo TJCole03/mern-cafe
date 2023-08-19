@@ -56,9 +56,11 @@ function LineItem(_ref) {
   } = _ref;
   return /*#__PURE__*/React.createElement("div", {
     className: _LineItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].LineItem
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex-ctr-ctr"
-  }, lineItem.item.imageURL), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: lineItem.item.imageURL,
+    width: "75",
+    height: "75"
+  }), /*#__PURE__*/React.createElement("div", {
     className: "flex-ctr-ctr flex-col"
   }, /*#__PURE__*/React.createElement("span", {
     className: "align-ctr"
@@ -242,9 +244,7 @@ function MenuListItem(_ref) {
     src: menuItem.imageURL,
     width: "75",
     height: "75",
-    onClick: () => window.alert( /*#__PURE__*/React.createElement("img", {
-      src: menuItem.imageURL
-    }))
+    onClick: () => menuItem.style.transform = scale(4)
   }), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
   }, menuItem.name), /*#__PURE__*/React.createElement("div", {
@@ -2855,4 +2855,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.bd0af68bba5995a5402a5e780976bcc7.js.map
+//# sourceMappingURL=App.4fddb9b98c291d8ac6739eed668fd025.js.map
